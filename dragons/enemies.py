@@ -129,7 +129,7 @@ class Troll(Enemy):
         self._color = 'troll (not dragon)'
 
     def question(self):
-        x = randint(0,10)
+        x = randint(4,15)
         self.__quest = f'type the the prime factorization of {x} without spaces'
         self.set_answer(int(''.join(map(str, get_factor_list(x)))))
         return self.__quest
